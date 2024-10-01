@@ -115,7 +115,7 @@ resource "aws_eip" "exercise-eip" {
 # Webサーバー
 resource "aws_instance" "exercise-instance" {
   ami = var.ami_id
-  instance_type = "t2.micro"
+  instance_type = "t4g.micro"
   availability_zone = "ap-northeast-1a"
   key_name = "exercise-key"
 
